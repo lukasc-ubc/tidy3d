@@ -5,9 +5,12 @@ from __future__ import annotations
 from typing import Any
 from functools import wraps
 
-import matplotlib.pylab as plt
-from matplotlib.patches import PathPatch, ArrowStyle
-from matplotlib.path import Path
+# import matplotlib.pylab as plt
+#from matplotlib.patches import PathPatch, ArrowStyle
+PathPath = None
+ArrowStyle = None
+#from matplotlib.path import Path
+Path = None
 from numpy import array, concatenate, ones
 import pydantic as pd
 
@@ -128,8 +131,8 @@ MEDIUM_CMAP = [
 STRUCTURE_EPS_CMAP = "gist_yarg"
 
 # default arrow style
-arrow_style = ArrowStyle.Simple(head_length=12, head_width=9, tail_width=4)
-
+#arrow_style = ArrowStyle.Simple(head_length=12, head_width=9, tail_width=4)
+arrow_style = None
 
 """=================================================================================================
 Descartes modified from https://pypi.org/project/descartes/ for Shapely >= 1.8.0

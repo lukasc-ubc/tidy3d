@@ -11,7 +11,8 @@ from typing_extensions import Annotated
 
 import pydantic
 import numpy as np
-from matplotlib.axes import Axes
+# from matplotlib.axes import Axes
+Axes = None
 from shapely.geometry.base import BaseGeometry
 from ..log import ValidationError
 
@@ -178,7 +179,8 @@ ObsGridArray = Union[Tuple[float, ...], ArrayLike[float, 1]]
 
 """ plotting """
 
-Ax = Axes
+#Ax = Axes
+Ax = None
 
 """ mode tracking """
 

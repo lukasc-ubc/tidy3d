@@ -9,7 +9,8 @@ import functools
 
 import pydantic
 import numpy as np
-from matplotlib import patches
+#from matplotlib import patches
+patches = None
 from shapely.geometry import Point, Polygon, box, MultiPolygon
 from shapely.validation import make_valid
 
